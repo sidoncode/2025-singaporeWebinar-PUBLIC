@@ -61,7 +61,6 @@ flowchart TB
 
 ---
 
----
 
 ## Tech Stack & Usage
 
@@ -153,9 +152,6 @@ flowchart LR
 
 ---
 
-
----
-
 ## What is BMAD
 
 BMAD-METHOD is a set of AI agents (Analyst, PM, Architect, SM, Dev, QA) that
@@ -175,7 +171,6 @@ the SM agent, the Dev agent implements it, and the ticket moves in Jira.
 BMAD isn't a separate tool bolted on — it's how each piece below gets built.
 
 ---
-
 
 ## What Unlocks After Each TODO
 
@@ -199,9 +194,7 @@ flowchart LR
     T6 --> Done((Working<br/>pipeline))
 ```
 
-
-
-
+---
 
 ## Guides
 
