@@ -4,6 +4,20 @@ A hands-on training project. You build a small, real event-driven system —
 and use BMAD agents to do it — while everything is tracked in Jira and
 streamed through Confluent Kafka.
 
+---
+
+## Table of Contents
+
+1. [Prerequisites](#prerequisites)
+2. [Project Structure](#project-structure)
+3. [Tech Stack & Usage](#tech-stack--usage)
+4. [How to Use This Project](#how-to-use-this-project)
+5. [What Unlocks After Each TODO](#what-unlocks-after-each-todo)
+6. [Guides](#guides)
+7. [What is BMAD](#what-is-bmad)
+
+---
+
 
 ## What this project is doing
 
@@ -44,19 +58,6 @@ flowchart LR
     T3 --> T4[TODO-4<br/>Consume] --> T5[TODO-5<br/>Persist] --> T6[TODO-6<br/>Dashboard]
     T6 --> Done((Working<br/>pipeline))
 ```
-
----
-
-
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Project Structure](#project-structure)
-3. [Tech Stack & Usage](#tech-stack--usage)
-4. [How to Use This Project](#how-to-use-this-project)
-5. [What Unlocks After Each TODO](#what-unlocks-after-each-todo)
-6. [Guides](#guides)
-7. [What is BMAD](#what-is-bmad)
 
 ---
 
