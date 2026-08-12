@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "OrderCreated",
+  "namespace": "com.training.orders",
+  "fields": [
+    { "name": "orderId", "type": "string" },
+    { "name": "customerId", "type": "string" },
+    { "name": "amount", "type": "double" },
+    { "name": "createdAt", "type": "string" }
+
+    // TODO-1: Add a "status" field to this schema.
+    // It should be a string, default to "CREATED", and represent the
+    // order's current state (e.g. CREATED, SHIPPED, CANCELLED).
+    // This is the field the dashboard will render.
+  ]
+}

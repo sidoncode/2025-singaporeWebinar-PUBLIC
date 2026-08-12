@@ -1,0 +1,16 @@
+{
+  "name": "order-producer",
+  "version": "1.0.0",
+  "description": "Publishes OrderCreated events to Confluent Kafka",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "uuid": "^9.0.1"
+  }
+}
