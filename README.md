@@ -26,11 +26,11 @@ together by you.
 
 1. [Prerequisites](#prerequisites)
 2. [Project Structure](#project-structure)
-3. [What is BMAD](#what-is-bmad)
-4. [Tech Stack & Usage](#tech-stack--usage)
-5. [How to Use This Project](#how-to-use-this-project)
-6. [What Unlocks After Each TODO](#what-unlocks-after-each-todo)
-7. [Guides](#guides)
+3. [Tech Stack & Usage](#tech-stack--usage)
+4. [How to Use This Project](#how-to-use-this-project)
+5. [What Unlocks After Each TODO](#what-unlocks-after-each-todo)
+6. [Guides](#guides)
+7. [What is BMAD](#what-is-bmad)
 
 ---
 
@@ -60,24 +60,6 @@ flowchart TB
 ```
 
 ---
-
-## What is BMAD
-
-BMAD-METHOD is a set of AI agents (Analyst, PM, Architect, SM, Dev, QA) that
-turn an idea into working code through documented steps, not one big prompt.
-
-```mermaid
-flowchart LR
-    An[Analyst<br/>writes brief] --> PM[PM<br/>writes PRD + epics]
-    PM --> Ar[Architect<br/>designs system]
-    Ar --> SM[SM<br/>splits into stories]
-    SM --> Dev[Dev<br/>writes code]
-    Dev --> QA[QA<br/>reviews]
-```
-
-In this project, every TODO is one story. You (or the trainer) hand it to
-the SM agent, the Dev agent implements it, and the ticket moves in Jira.
-BMAD isn't a separate tool bolted on — it's how each piece below gets built.
 
 ---
 
@@ -194,6 +176,27 @@ flowchart LR
 ```
 
 ---
+
+## What is BMAD
+
+BMAD-METHOD is a set of AI agents (Analyst, PM, Architect, SM, Dev, QA) that
+turn an idea into working code through documented steps, not one big prompt.
+
+```mermaid
+flowchart LR
+    An[Analyst<br/>writes brief] --> PM[PM<br/>writes PRD + epics]
+    PM --> Ar[Architect<br/>designs system]
+    Ar --> SM[SM<br/>splits into stories]
+    SM --> Dev[Dev<br/>writes code]
+    Dev --> QA[QA<br/>reviews]
+```
+
+In this project, every TODO is one story. You (or the trainer) hand it to
+the SM agent, the Dev agent implements it, and the ticket moves in Jira.
+BMAD isn't a separate tool bolted on — it's how each piece below gets built.
+
+---
+
 
 ## Guides
 
