@@ -4,21 +4,6 @@ A hands-on training project. You build a small, real event-driven system —
 and use BMAD agents to do it — while everything is tracked in Jira and
 streamed through Confluent Kafka.
 
----
-
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Project Structure](#project-structure)
-3. [Tech Stack & Usage](#tech-stack--usage)
-4. [How to Use This Project](#how-to-use-this-project)
-5. [What Unlocks After Each TODO](#what-unlocks-after-each-todo)
-6. [Guides](#guides)
-7. [What is BMAD](#what-is-bmad)
-
----
-
-
 ## What this project is doing
 
 An order comes in → gets published as an event → flows through Kafka →
@@ -37,27 +22,15 @@ together by you.
 
 ---
 
-## What Unlocks After Each TODO
+## Table of Contents
 
-| TODO | You touch | After it's done |
-|---|---|---|
-| TODO-1 | Avro schema | Event contract includes order `status` |
-| TODO-2 | Producer → Kafka | Producer can publish events to Confluent |
-| TODO-3 | Producer API | `POST /orders` creates and publishes an order |
-| TODO-4 | Consumer loop | Consumer reads events off the topic |
-| TODO-5 | Consumer → DB | Orders are saved to Postgres |
-| TODO-6 | Dashboard | Live orders appear in the browser, auto-refreshing |
-| TODO-7 | Docker Compose | Postgres reports healthy before consumer starts |
-
-By TODO-6, the full pipeline runs end-to-end: an order posted in a terminal
-shows up on the dashboard within seconds.
-
-```mermaid
-flowchart LR
-    T1[TODO-1<br/>Schema] --> T2[TODO-2<br/>Publish] --> T3[TODO-3<br/>API]
-    T3 --> T4[TODO-4<br/>Consume] --> T5[TODO-5<br/>Persist] --> T6[TODO-6<br/>Dashboard]
-    T6 --> Done((Working<br/>pipeline))
-```
+1. [Prerequisites](#prerequisites)
+2. [Project Structure](#project-structure)
+3. [Tech Stack & Usage](#tech-stack--usage)
+4. [How to Use This Project](#how-to-use-this-project)
+5. [What is BMAD](#what-is-bmad)
+6. [What Unlocks After Each TODO](#what-unlocks-after-each-todo)
+7. [Guides](#guides)
 
 ---
 
@@ -87,7 +60,6 @@ flowchart TB
 ```
 
 ---
-
 
 ## Tech Stack & Usage
 
@@ -195,7 +167,31 @@ flowchart LR
 
 In this project, every TODO is one story. You (or the trainer) hand it to
 the SM agent, the Dev agent implements it, and the ticket moves in Jira.
-BMAD isn't a separate tool bolted on — it's how each piece below gets built.
+BMAD isn't a separate tool bolted on — it's how each piece above gets built.
+
+---
+
+## What Unlocks After Each TODO
+
+| TODO | You touch | After it's done |
+|---|---|---|
+| TODO-1 | Avro schema | Event contract includes order `status` |
+| TODO-2 | Producer → Kafka | Producer can publish events to Confluent |
+| TODO-3 | Producer API | `POST /orders` creates and publishes an order |
+| TODO-4 | Consumer loop | Consumer reads events off the topic |
+| TODO-5 | Consumer → DB | Orders are saved to Postgres |
+| TODO-6 | Dashboard | Live orders appear in the browser, auto-refreshing |
+| TODO-7 | Docker Compose | Postgres reports healthy before consumer starts |
+
+By TODO-6, the full pipeline runs end-to-end: an order posted in a terminal
+shows up on the dashboard within seconds.
+
+```mermaid
+flowchart LR
+    T1[TODO-1<br/>Schema] --> T2[TODO-2<br/>Publish] --> T3[TODO-3<br/>API]
+    T3 --> T4[TODO-4<br/>Consume] --> T5[TODO-5<br/>Persist] --> T6[TODO-6<br/>Dashboard]
+    T6 --> Done((Working<br/>pipeline))
+```
 
 ---
 
